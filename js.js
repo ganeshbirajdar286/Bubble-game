@@ -38,6 +38,7 @@ document.querySelector("#scoreval").innerText=score;
 
 document.querySelector("#btpanel").addEventListener("click",(e)=>{
 let clickno=(Number(e.target.innerText));
+bubblemaker();
 if(hitrn===clickno){
 newscore();
 bubblemaker();
