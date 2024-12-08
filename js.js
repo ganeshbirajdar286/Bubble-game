@@ -19,6 +19,7 @@ let interval= setInterval(()=>{
     else{
         clearInterval(interval);
         document.querySelector("#btpanel").innerHTML= "<h1>Game over</h1>";
+        gameover.removeEventListener("click",eobject);
     }
 },1000);
 }
@@ -36,12 +37,17 @@ document.querySelector("#scoreval").innerText=score;
 }
 
 
-document.querySelector("#btpanel").addEventListener("click",(e)=>{
-let clickno=(Number(e.target.innerText));
-bubblemaker();
-if(hitrn===clickno){
-newscore();
-bubblemaker();
-newhit();
-}
-}) 
+let eobject=(e)=>{
+    let clickno=(Number(e.target.innerText));
+    bubblemaker();
+    if(hitrn===clickno){
+    newscore();
+    bubblemaker();
+    newhit();
+    }
+    }
+
+let gameover =document.querySelector("#btpanel")
+gameover.addEventListener("click",eobject) 
+
+
