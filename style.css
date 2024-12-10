@@ -84,9 +84,10 @@ font-size: xx-large;
 
 @media (max-width:600px){
     #panel{
-        height: 60%;
+        height: 78%;
         background-color: white;
         width:400px;
+        border-radius: 20px;
     }
     #toppanel{
         height: 23%;
@@ -97,7 +98,7 @@ font-size: xx-large;
        display: flex;
        flex-direction: column;
       margin-right: 15%;
-      justify-content: space-around;
+      justify-content: center;
     }
 
 }
