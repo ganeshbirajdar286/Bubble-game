@@ -2,7 +2,7 @@
 
 let bubblemaker=()=>{
     let clutter="";
-for(let i=1;i<=120;i++){
+for(let i=1;i<=200;i++){
 clutter +=`<div class="bubble">${Math.floor(Math.random()*10)}</div>`;
 
 }
