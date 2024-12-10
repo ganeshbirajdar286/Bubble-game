@@ -29,6 +29,7 @@ let newhit=()=>{
 hitrn=  Math.floor(Math.random()*10);
 document.querySelector("#hitval").innerText=hitrn;
 }
+
 newhit();
 let score=0;
 let  newscore=()=>{
@@ -44,6 +45,9 @@ let eobject=(e)=>{
     newscore();
     bubblemaker();
     newhit();
+    }
+    if( hitrn!= clickno){
+        newhit();
     }
     }
 
