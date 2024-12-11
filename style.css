@@ -82,7 +82,7 @@ font-size: xx-large;
 
 
 
-@media (max-width:600px){
+@media (max-width:459px){
     #panel{
         height: 78%;
         background-color: white;
@@ -101,4 +101,24 @@ font-size: xx-large;
       justify-content: center;
     }
 
+}
+@media (max-width:700px) {
+    #panel{
+        height: 78%;
+        background-color: white;
+        width:500px;
+        border-radius: 20px;
+    }
+    
+    #toppanel{
+        height: 23%;
+        width: 500px;
+        background-color: rgb(44, 129, 44);
+}
+.elem{
+    display: flex;
+    flex-direction: column;
+   margin-right: 15%;
+   justify-content: center;
+ }
 }
